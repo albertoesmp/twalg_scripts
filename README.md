@@ -17,11 +17,39 @@ Shapenet scripts
 --------------------
 
 ***shapenet/data*** :
-The scripts to download the shapenet datasets and transform them to LAS format
+The scripts to transform the the shapenet datasets to LAS format
 
 
 ***shapenet/experiments*** :
-The scripts to run the stratified k-folding scripts on the airplane, car, chair, guitar, knife, lamp, motorbike, and pistol datasets.
+The scripts to run the stratified k-folding experiments on the airplane, car, chair, guitar, knife, lamp, motorbike, and pistol datasets.
+
+
+
+DALES scripts
+----------------
+
+*dales* :
+The scripts to run the first-order, second-order, and hybrid model experiments on the DALES dataset.
+
+
+
+HPC scripts
+----------------
+
+*hpc* :
+The scripts to run the experiments of the scalability analysis from 1 to 32 cores using the FinisTerrae-III with SLURM.
+
+
+
+Theoretical validation
+------------------------
+
+*theoretical* :
+The script to run the theoretical experiments and the Jupyter notebook for Sagemath used to generate the analyitical references.
+
+*theoretical/data* :
+The point clouds corresponding to the theoretical experiments.
+
 
 
 
