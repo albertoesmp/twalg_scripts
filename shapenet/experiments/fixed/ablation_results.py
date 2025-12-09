@@ -141,8 +141,5 @@ if __name__ == '__main__':
     # Format figure
     fig.tight_layout()
     # Save and show
-    plt.savefig(
-        '/tmp/features_ablation_on_shapenet.jpg',
-        dpi=300
-    )
+    plt.savefig('/tmp/features_ablation_on_shapenet.jpg', dpi=300)
     plt.show()
