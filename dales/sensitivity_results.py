@@ -76,22 +76,22 @@ def digest_results(results_dir, subplot_idx, hparam_name, hparam_math):
     ax.set_title(hparam_name, fontsize=10)
     ax.plot(
         vals, eigen_fimps,
-        label='Eigen', color='tab:blue', lw=2,
+        label='Eigenvalue', color='tab:blue', lw=2,
         marker='X', markeredgecolor='black'
     )
     ax.plot(
         vals, poly_fimps,
-        label='Poly', color='tab:green', lw=2,
+        label='Polynomial', color='tab:green', lw=2,
         marker='v', markeredgecolor='black'
     )
     ax.plot(
         vals, diff_fimps,
-        label='Diff', color='tab:red', lw=2,
+        label='Differential', color='tab:red', lw=2,
         marker='s', markeredgecolor='black'
     )
     ax.plot(
         vals, curv_fimps,
-        label='Curv', color='tab:orange', lw=2,
+        label='Curvature', color='tab:orange', lw=2,
         marker='o', markeredgecolor='black'
     )
     # Format figure
@@ -99,10 +99,9 @@ def digest_results(results_dir, subplot_idx, hparam_name, hparam_math):
     ax.set_xlabel(r'$\log_{10}('f'{hparam_math}'r')$')
     if subplot_idx==1:
         ax.set_ylabel('Feature importance')
-        ax.legend(loc='upper left')
+        ax.legend(bbox_to_anchor=(1.1, 1.05))
     ax.grid('both')
     ax.set_axisbelow(True)
-
 
 
 # ---   MAIN   --- #
