@@ -9,9 +9,9 @@ import os
 # ---   RESULTS   --- #
 # ------------------- #
 # Directory with the results of the sensitivity analysis for the eigenthreshold
-EIGEN_RESULTS='/ext4/lidar_data/math/geomfeats2nd/sensitivity/eigen/out'
+EIGEN_RESULTS='/ext4/lidar_data/math/geomfeats2nd/sensitivity/eigen_only2nd/out'
 # Directory with the results of the sensitivity analysis for the tikhonov
-TIKHONOV_RESULTS='/ext4/lidar_data/math/geomfeats2nd/sensitivity/tikhonov/out'
+TIKHONOV_RESULTS='/ext4/lidar_data/math/geomfeats2nd/sensitivity/tikhonov_only2nd/out'
 # Eigenvalue fnames
 EIGEN_FNAMES = [
     'quad_dev', 'frobenius', 'spectral'
@@ -95,7 +95,8 @@ def digest_results(results_dir, subplot_idx, hparam_name, hparam_math):
         marker='o', markeredgecolor='black'
     )
     # Format figure
-    ax.set_yticks(np.arange(np.min(fimps), np.max(fimps)+0.1, 0.1))
+    ax.set_xticks(np.linspace(np.min(vals), np.max(vals), 4))
+    ax.set_yticks(np.linspace(0, 0.6, 4))
     ax.set_xlabel(r'$\log_{10}('f'{hparam_math}'r')$')
     if subplot_idx==1:
         ax.set_ylabel('Feature importance')
@@ -108,7 +109,7 @@ def digest_results(results_dir, subplot_idx, hparam_name, hparam_math):
 # ---------------- #
 if __name__ == '__main__':
     # Prepare figure
-    fig = plt.figure(figsize=(9, 4))
+    fig = plt.figure(figsize=(8, 3))
     # Digest results
     digest_results(EIGEN_RESULTS, 1, 'Eigenthreshold', r'\epsilon')
     digest_results(TIKHONOV_RESULTS, 2, 'Tikhonov parameter', r'\tau')
