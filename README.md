@@ -20,16 +20,18 @@ Shapenet scripts
 The scripts to transform the the shapenet datasets to LAS format
 
 
-***shapenet/experiments*** :
+***shapenet/experiments/kfold*** :
 The scripts to run the stratified k-folding experiments on the airplane, car, chair, guitar, knife, lamp, motorbike, and pistol datasets.
 
+***shapenet/experiments/fixed*** :
+The scripts to run the ablation study on the chair, pistol, motorbike, and car datasets.
 
 
 DALES scripts
 ----------------
 
 *dales* :
-The scripts to run the first-order, second-order, and hybrid model experiments on the DALES dataset.
+The scripts to run the first-order, second-order, and hybrid model experiments on the DALES dataset. It also contains the bash scripts to generate the SLURM scripts to run the sensitivity analysis in the FinisTerrae-III supercomputer.
 
 
 
@@ -45,7 +47,7 @@ Theoretical validation
 ------------------------
 
 *theoretical* :
-The script to run the theoretical experiments and the Jupyter notebook for Sagemath used to generate the analyitical references.
+The script to run the theoretical experiments and the Jupyter notebook for Sagemath used to generate the analyitical references. It also contains an alternative version of the notebook where normal noise along the gradient direction can be modelled through its standard deviation.
 
 *theoretical/data* :
 The point clouds corresponding to the theoretical experiments.
