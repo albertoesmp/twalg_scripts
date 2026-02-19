@@ -142,8 +142,8 @@
       "second_order_strategy": "taubin_bias",
       "idw_p": 0,
       "idw_eps": 11,
-    "  foc_K": 0,
-    "  foc_sigma": 3.14159265358979323846264338327950288419716939937510,
+      "foc_K": 0,
+      "foc_sigma": 3.14159265358979323846264338327950288419716939937510,
       "neighborhood": {
         "type": "sphere",
         "radius": 0.4,
