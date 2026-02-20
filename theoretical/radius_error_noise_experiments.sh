@@ -29,12 +29,12 @@ for (( i=0 ; i < ${#RADII[@]} ; ++i )); do
     cat << EOF > "${TMPJSON}"
 {
     "in_pcloud": [
-        "/ext4/lidar_data/math/geomfeats2nd/noise/cylinder/sage_elc_h1_5_a0_6_b0_5_sigma0.0100000000000000.laz",
-        "/ext4/lidar_data/math/geomfeats2nd/noise/hyperboloid/sage_osh_a0_5_b0_75_c1_25_sigma0.0100000000000000.laz",
-        "/ext4/lidar_data/math/geomfeats2nd/noise/paraboloid/sage_hpa_h1_a0_6_b0_9_sigma0.0100000000000000.laz",
-        "/ext4/lidar_data/math/geomfeats2nd/noise/toroid/sage_tor_r0_5_R1_0_sigma0.0100000000000000.laz",
-        "/ext4/lidar_data/math/geomfeats2nd/noise/ellipsoid/sage_ell_a1_3_b1_1_c0_9_sigma0.0100000000000000.laz",
-        "/ext4/lidar_data/math/geomfeats2nd/noise/catenoid/sage_cat_h1_3_a1_sigma0.0100000000000000.laz"
+        "/ext4/lidar_data/math/geomfeats2nd/noise/cylinder/sage_elc_h1_5_a0_6_b0_5_sigma0.0500000000000000.laz",
+        "/ext4/lidar_data/math/geomfeats2nd/noise/hyperboloid/sage_osh_a0_5_b0_75_c1_25_sigma0.0500000000000000.laz",
+        "/ext4/lidar_data/math/geomfeats2nd/noise/paraboloid/sage_hpa_h1_a0_6_b0_9_sigma0.0500000000000000.laz",
+        "/ext4/lidar_data/math/geomfeats2nd/noise/toroid/sage_tor_r0_5_R1_0_sigma0.0500000000000000.laz",
+        "/ext4/lidar_data/math/geomfeats2nd/noise/ellipsoid/sage_ell_a1_3_b1_1_c0_9_sigma0.0500000000000000.laz",
+        "/ext4/lidar_data/math/geomfeats2nd/noise/catenoid/sage_cat_h1_3_a1_sigma0.0500000000000000.laz"
     ],
     "out_pcloud": [
         "${TMPOUT}/cylinder/*",
