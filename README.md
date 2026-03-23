@@ -9,7 +9,7 @@ This repository contains the files necessary to reproduce the experiments.
 VL3D++ framework
 -------------------
 
-First, the VL3D++ framework is necessary to run the algorithms, train the models, and evaluate them. It is an open-source software that can be downloaded from [its official repository](https://github.com/catallactical/vl3d).
+First, the VL3D++ framework is necessary to run the algorithms, train the models, and evaluate them. It is an open-source software that can be downloaded from [its official repository](https://gitlab.com/catallactical/vl3dpp).
 
 
 
