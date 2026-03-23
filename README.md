@@ -58,9 +58,20 @@ The point clouds corresponding to the theoretical experiments.
 
 Cite
 ------
-**DOI**:
+**DOI**: https://doi.org/10.1016/j.cam.2026.117569
 
 **Bibtex**:
 ```
+@article{ESMORIS2026117569,
+title = {{Introducing the Taubin-Weingarten algorithm to compute second-order geometric descriptors in 3D point clouds}},
+journal = {{Journal of Computational and Applied Mathematics}},
+volume = {485},
+pages = {117569},
+year = {2026},
+issn = {0377-0427},
+doi = {https://doi.org/10.1016/j.cam.2026.117569},
+url = {https://www.sciencedirect.com/science/article/pii/S0377042726002177},
+author = {Alberto M. Esmorís and Xabier García-Martínez and Manuel Ladra and José Carlos Cabaleiro and Francisco {Fernández Rivera}},
+}
 ```
 
